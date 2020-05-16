@@ -3,14 +3,17 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
+    mode: 'development',
     entry: './src/client/index.js',
-    rules: [
-        {
-            test: '/\.js$/',
-            exclude: /node_modules/,
-            loader: "babel-loader"
-        }
-    ],
+    module: {
+        rules: [
+            {
+                test: '/\.js$/',
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            }
+        ]
+    },
     plugins: [
         new HtmlWebPackPlugin({
             template:"./src/client/views/index.html",
