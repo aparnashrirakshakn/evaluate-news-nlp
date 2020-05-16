@@ -5,6 +5,7 @@ const webpack = require('webpack')
 
 module.exports = {
     mode: 'development',
+    devtool: 'source-map',
     entry: './src/client/index.js',
     output: {
         libraryTarget: 'var',
