@@ -7,9 +7,10 @@ This is a web tool that allows users to run Natural Language Processing on artic
 1.  Sign up to create API credentials on the [AYLIEN API](https://aylien.com/text-api/)  website
 2.  Create a .env file at the root level, which contains the following
 
-	```
+```
 APP_ID=<YOUR_APP_ID_HERE>
 API_KEY=<YOUR_API_KEY_HERE>
+```
 
 # Run
 1. `cd` into your `evaluate-news-app` directory
